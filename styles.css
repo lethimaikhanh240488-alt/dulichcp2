@@ -1,0 +1,282 @@
+/* styles.css */
+
+/* Thiết lập chung cho body */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header */
+header {
+    background-color: #ffffff;
+    color: #333;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+header .logo img {
+    height: 50px;
+    margin-left: 20px;
+}
+
+header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+header nav ul li {
+    margin-right: 20px;
+}
+
+header nav ul li a {
+    color: #333;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+header nav ul li a:hover {
+    color: #28a745;
+}
+
+/* Banner */
+.banner {
+    position: relative;
+}
+
+.banner img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.banner-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    text-align: center;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
+}
+
+/* Carousel */
+.carousel-item img {
+    height: 500px;
+    object-fit: cover;
+}
+
+/* Intro */
+.intro {
+    padding: 20px;
+    text-align: center;
+}
+
+/* Featured Places và Places List */
+.featured-places, .places-list {
+    padding: 20px;
+}
+
+.featured-places .places, .places-list .places {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.featured-places .place, .places-list .place {
+    width: 30%;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.featured-places .place img, .places-list .place img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+/* Place Detail */
+.place-detail {
+    padding: 20px;
+}
+
+.place-detail img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+/* Contact */
+.contact {
+    padding: 20px;
+}
+
+.contact form {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.contact form label {
+    margin-top: 10px;
+    font-weight: 500;
+}
+
+.contact form input, .contact form textarea {
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact form button {
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: 500;
+}
+
+.contact form button:hover {
+    background-color: #218838;
+}
+
+/* About */
+.about {
+    padding: 20px;
+    text-align: center;
+}
+
+/* Footer */
+footer {
+    background-color: #343a40;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #dddddd;
+}
+
+/* Nút chính */
+.btn-primary {
+    background-color: #28a745;
+    border-color: #28a745;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.btn-primary:hover {
+    background-color: #218838;
+    border-color: #218838;
+}
+
+/* Nút tìm kiếm */
+.btn-outline-success {
+    color: #28a745;
+    border-color: #28a745;
+}
+
+.btn-outline-success:hover {
+    background-color: #28a745;
+    color: #fff;
+}
+
+/* Tiêu đề */
+h2 {
+    font-family: 'Playfair Display', serif;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    header nav ul {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    header nav ul li {
+        margin: 10px 0;
+    }
+
+    .featured-places .place, .places-list .place {
+        width: 100%;
+    }
+
+    .carousel-item img {
+        height: 300px;
+    }
+}
+
+
+
+
+/* styles.css */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f8f9fa;
+}
+
+.navbar {
+    background-color: #ffffff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.carousel-item img {
+    height: 500px;
+    object-fit: cover;
+}
+
+.card-img-top {
+    height: 200px;
+    object-fit: cover;
+}
+
+.btn-primary {
+    background-color: #28a745;
+    border-color: #28a745;
+}
+
+.btn-primary:hover {
+    background-color: #218838;
+    border-color: #218838;
+}
+
+h2 {
+    font-family: 'Playfair Display', serif;
+    color: #333;
+}
+
+footer {
+    background-color: #343a40;
+}
+
+footer a:hover {
+    color: #dddddd;
+    text-decoration: none;
+}
